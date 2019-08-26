@@ -1,0 +1,29 @@
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+.messageArea {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.chatMessage {
+ border: 1px solid lightblue;
+ border-radius: 10px;
+ background-color: lightgreen;
+ padding: 0.5rem;
+ margin: 0.1rem 0.5rem 0.3rem 0.5rem;
+}
+#inputArea {
+ position: sticky;
+ top: 0;
+}
+#logout:hover {
+ border: 1px solid red;
+ transform: scaleX(0.3rem);
+ font-size: 20px;
+ background-color: red;
+ cursor: pointer;
+ transition: all 0.5s;
+}
