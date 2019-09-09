@@ -21,11 +21,12 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 import static java.util.Arrays.asList;
 import static java.util.concurrent.TimeUnit.SECONDS;
-// end points need to be tested against
+// There are three end points need to be tested, which are
 // ws/app/chat.sendMessage
 // ws/app/chat.addUser
 // ws/topic
 
+//however the test throws errors. I am not sure how to eliminate this error, please help!!! Thanks.
 @RunWith(SpringJUnit4ClassRunner.class)
 //@SpringBootTest(webEnvironment = RANDOM_PORT)
 @SpringBootTest(classes=ChatAppDemoApplicationTests.class)
