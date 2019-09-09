@@ -1,6 +1,5 @@
 package com.example.chat_app_demo;
 
-import javafx.application.Application;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,13 +21,14 @@ import java.util.concurrent.LinkedBlockingDeque;
 
 import static java.util.Arrays.asList;
 import static java.util.concurrent.TimeUnit.SECONDS;
-
 // end points need to be tested against
 // ws/app/chat.sendMessage
 // ws/app/chat.addUser
 // ws/topic
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = Application.class)
+//@SpringBootTest(webEnvironment = RANDOM_PORT)
+@SpringBootTest(classes=ChatAppDemoApplicationTests.class)
 
 public class ChatAppDemoApplicationTests {
 	static final String WebSocket_URL = "ws://localhost:8080:/ws";
